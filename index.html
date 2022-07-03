@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>Curso css</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
-    
+
 <!--
                          00
                         0  0
@@ -30,89 +29,267 @@
 		   000000000000000000000000000000
  -->
 
-<main>
-    <form action="https://formspree.io/f/mpzbevbn" method="POST" class="formulario" id="formulario">
-        <!-- Grupo: Usuario -->
-        <div class="formulario__grupo" id="grupo__usuario">
-            <label for="usuario" class="formulario__label">User:</label>
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="User">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <h2 class="nav_title">Facebook.</h2>
             </div>
-            <p class="formulario__input-error">The username must be from 4 to 16 digits and can only contain numbers, letters and underscores.</p>
-        </div>
-
-        <!-- Grupo: Nombre -->
-        <div class="formulario__grupo" id="grupo__nombre">
-            <label for="nombre" class="formulario__label">Name:</label>
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Name">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            <ul class="nav_link nav_link-menu">
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Start</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Start</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Contact</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Blog</a>
+                </li>
+                <img src="img/close.svg" alt="X" class="nav_close">
+            </ul>
+            <div class="nav_menu">
+                <img src="img/hamburguesa.svg" alt="Menu" class="nav_img">
             </div>
-            <p class="formulario__input-error">The name must be 4 to 12 digits long and cannot contain numbers or underscores.</p>
-        </div>
-
-        <!-- Grupo: Contraseña -->
-        <div class="formulario__grupo" id="grupo__password">
-            <label for="password" class="formulario__label">Password:</label>
-            <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password" id="password">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </nav>
+        <section class="hero_container container">
+            <h1 class="hero_title">Privacy Policy</h1>
+            <p class="hero_paragraph">At Meta, we want you to understand what information we collect and how we use and share it. For this reason, we recommend that you read our Privacy Policy. This way you will be able to use the Meta Products in the most suitable way for you.</p>
+            <a target="_blank" href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0" class="cta">Lear more</a>
+        </section>
+    </header>
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">What will you find on this site?</h2>
+            <p class="about_paragraph">In the Privacy Policy we explain how we collect, use, share, retain and transfer information. We also inform you of what your rights are.</p>
+            <div class="about_main">
+                <article class="about_icons">
+                    <img src="img/shapes.svg" alt="" class="about_icon">
+                    <h3 class="about-title">The information we collect</h3>
+                    <p class="about-paragraph"> recopilamos información diferente si vendes muebles en Marketplace o publicas un reel en Instagram.</p>
+                </article>
+                <article class="about_icons">
+                    <img src="img/paint.svg" alt="" class="about_icon">
+                    <h3 class="about-title">Personalized experience</h3>
+                    <p class="about-paragraph">To provide you with a personalized experience, including ads, in addition to the other purposes detailed below</p>
+                </article>
+                <article class="about_icons">
+                    <img src="img/code.svg" alt="" class="about_icon">
+                    <h3 class="about-title">How long do we keep your information?</h3>
+                    <p class="about-paragraph">We keep the information for as long as necessary to offer our Products, comply with legal obligations</p>
+                </article>
             </div>
-            <p class="formulario__input-error">The password has to be 4 to 12 digits.</p>
-        </div>
+        </section>
 
-        <!-- Grupo: Contraseña 2 -->
-        <div class="formulario__grupo" id="grupo__password2">
-            <label for="password2" class="formulario__label">Repeat password:</label>
-            <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password2" id="password2">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <section class="knowledge">
+            <div class="knowledge_container container">
+                <div class="knowledge_texts">
+                    <h2 class="subtitle">Advertising policies</h2>
+                    <p class="knowledge_paragraph">Facebook's Advertising Policies provide information on what types of content and practices are permitted or prohibited on the site. We encourage all advertisers to review these policies before creating ads.</p>
+                    <a target="_blank" href="https://www.facebook.com/business/help/117271728356988" class="cta">Lear more</a>
+                </div>
+                <figure class="knowledge_picture">
+                    <img src="img/EsferaFacebook.jpg" alt="" class="knowledge_img">
+                </figure>
             </div>
-            <p class="formulario__input-error">Both passwords must be the same.</p>
-        </div>
+        </section>
 
-        <!-- Grupo: Correo -->
-        <div class="formulario__grupo" id="grupo__correo">
-            <label for="correo" class="formulario__label">Email:</label>
-            <div class="formulario__grupo-input">
-                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo Electronico">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <section class="testimony2">
+            <div class="container2">
+                <h2 class="subtitle2">Founders of Facebook<span class="point">.</span></h2>
+                <p class="copy_section2">The two most important people on Facebook:</p>
+    
+                <div class="testimony_container2">
+    
+                    <div class="testimony_card2">
+                        <img src="img/Mark Zuckerberg.jpg" alt="" class="testimony_img2">
+                        <div class="testimony_copy2">
+                            <i class='bx bxl-meta testimony_logo2'></i>
+                            <div class="testimony_info2">
+                                <h3 class="testimony_name2">Mark Zuckerberg</h3>
+                                <p class="testimony_positionb">CEO of Meta</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="testimony_card2">
+                        <img src="img/Co-funador.png" alt="" class="testimony_img2">
+                        <div class="testimony_copy2">
+                            <i class='bx bxl-facebook testimony_logo2'></i>
+                            <div class="testimony_info2">
+                                <h3 class="testimony_name2">Andrew.McCollum</h3>
+                                <p class="testimony_positionb">Facebook Co-founder</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="testimony_card2">
+                        <div class="testimony_text2">
+                            <img src="img/Facebook_Logo.svg" class="google_logo2">
+                            <p class="testimony_history2">«The biggest risk is not taking any. In a world that is changing so fast, the only strategy that is guaranteed to fail is not taking risks.»</p>
+                            <div class="testimony_copy2 testimony_copy--modifier2">
+                                <img src="img/Mark Zuckerberg.jpg" class="testimony_logo2 logo--picture2">
+                                <div class="testimony_info2">
+                                    <h3 class="testimony_name2">Mark Zuckerberg</h3>
+                                    <p class="testimony_positionb">Popular Phrases</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
             </div>
-            <p class="formulario__input-error">The email can only contain letters, numbers, periods, hyphens and underscores.</p>
-        </div>
+        </section>
 
-        <!-- Grupo: Telefono -->
-        <div class="formulario__grupo" id="grupo__telefono">
-            <label for="telefono" class="formulario__label">Phone number:</label>
-            <div class="formulario__grupo-input">
-                <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="Numero de Telefono">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <section class="testimony">
+            <div class="testimony_container container">
+                <img src="img/leftarrow.svg" alt="" class="testimony_arrow" id="before">
+
+                <section class="testimony_body testimony_body--show" data-id="1">
+                    <div class="testimony_text">
+                        <h2 class="subtitle">Facebook, <span class="testimony_course">Social network.</span></h2>
+                        <p class="testimony_review">Facebook is the main social network that exists in the world. A network of virtual links, whose main objective is to support the production and sharing of content. It came to expand the possibilities of social relationships and caused a significant revolution in the world of communications. Marketing was no stranger to this change, finding in this modality fertile ground for new concepts and approaches.
+                        </p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="img/Logo Facebook.png" alt="" class="testimony_img">
+                    </figure>
+                </section>
+
+                <section class="testimony_body" data-id="2">
+                    <div class="testimony_text">
+                        <h2 class="subtitle">Instagram, <span class="testimony_course">Social network.</span></h2>
+                        <p class="testimony_review">Instagram is a social network and a mobile application at the same time, which allows its users to upload images and videos with multiple photographic effects such as filters, frames, retro colors, etc., to later share those images on the same platform or on other networks social.
+                        </p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="img/Logo Intagran.png" alt="" class="testimony_img">
+                    </figure>
+                </section>
+                
+                <section class="testimony_body" data-id="3">
+                    <div class="testimony_text">
+                        <h2 class="subtitle">Whasapp, <span class="testimony_course">Social network.</span></h2>
+                        <p class="testimony_review">WhatsApp is a chat application for mobile phones of the latest generation, the so-called smartphones. It is used to send text and multimedia messages between its users. Its operation is similar to the most common instant messaging programs for computers, although it is focused on and adapted to mobile phones. There is a desktop WhatsApp web for PC and therefore WhatsApp also works on iPad and most tablets.
+                        </p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="img/Logo Whasapp.png" alt="" class="testimony_img">
+                    </figure>
+                </section>
+
+                <section class="testimony_body" data-id="4">
+                    <div class="testimony_text">
+                        <h2 class="subtitle">Spotify, <span class="testimony_course">Social network.</span></h2>
+                        <p class="testimony_review">Spotify is a digital music, podcast, and video service that gives you access to millions of songs and other content from creators around the world.
+
+                        Basic features like listening to music are completely free, but you also have the option to upgrade to Spotify Premium.
+                            
+                        Spotify is available on a wide variety of devices, including computers, phones, tablets, speakers, TVs and cars, and you can easily switch between them with Spotify Connect.</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="img/Logo Spotify.png" alt="" class="testimony_img">
+                    </figure>
+                </section>
+
+                <img src="img/rightarrow.svg" alt="" class="testimony_arrow" id="next">
             </div>
-            <p class="formulario__input-error">The phone can only contain numbers and the maximum is 14 digits.</p>
-        </div>
+        </section>
 
-        <!-- Grupo: Terminos y Condiciones -->
-        <div class="formulario__grupo" id="grupo__terminos">
-            <label class="formulario__label">
-                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                I accept the terms and conditions
-            </label>
-        </div>
+        <section class="questions container">
+            <h2 class="subtitle">Frequent questions</h2>
+            <p class="questions_paragraph">The most frequently asked questions are the following:</p>
+            <section class="questions_container">
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">It is safe?
+                            <span class="questions_arrow">
+                                <img src="img/arrow.svg" alt="" class="questions_img">
+                            </span>
+                        </h3>
+                        <p class="questions_show">In this sense, Facebook is perhaps a little more secure, since the account of this social network does not usually also work as an email account. But there are ways to mitigate email hacking regardless of the service.</p>
+                    </div>
+                </article>
 
-        <div class="formulario__mensaje" id="formulario__mensaje">
-            <p><i class="fas fa-exclamation-triangle"></i><b>Mistake:</b> Please fill in the form correctly.</p>
-        </div>
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">What's this?
+                            <span class="questions_arrow">
+                                <img src="img/arrow.svg" alt="" class="questions_img">
+                            </span>
+                        </h3>
+                        <p class="questions_show">Facebook is the main social network that exists in the world. A network of virtual links, whose main objective is to support the production and sharing of content. It came to expand the possibilities of social relationships and caused a significant revolution in the world of communications. Marketing was no stranger to this change, finding in this modality fertile ground for new concepts and approaches.</p>
+                    </div>
+                </article>
 
-        <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <button type="submit" class="formulario__btn">Send</button>
-            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Form sent successfully!</p>
-        </div>
-    </form>
-</main>
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">What will I get when I register?
+                            <span class="questions_arrow">
+                                <img src="img/arrow.svg" alt="" class="questions_img">
+                            </span>
+                        </h3>
+                        <p class="questions_show">By registering you can help a friend recover their account. The account could be blocked for various reasons such as not complying with Facebook rules or offensive comments to other people, if you want to read more you can <a target="_blank" href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0" class="linkEd">read our policies</a></p>
+                    </div>
+                </article>
+            </section>
 
-<script src="js/formulario.js"></script>
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+            <section class="questions_offer">
+                <h2 class="subtitle">Help your friend</h2>
+                <p class="questions_copy">Help your friend to recover his account by filling out a simple form or register on facebook to make the process faster.</p>
+                <a href="#" class="cta">Check in</a>
+            </section>
+        </section>
 
+    </main>
+
+    <footer class="footer">
+        <section class="footer_container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer_title">Facebook.</h2>
+                
+                <ul class="nav_link nav_link--footer">
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Start</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Start</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Contact</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Blog</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <form class="footer_form" action="https://formspree.io/f/mknyppgj"
+            method="POST">
+                <h2 class="footer_newsletter">Subscribe</h2>
+                <div class="footer_inputs">
+                    <input type="email" placeholder="Email:" class="footer_input" name="email">
+                    <input type="submit" value="Sign up" class="footer_submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer_copy container">
+            <div class="footer_social">
+                <a target="_blank" href="https://www.facebook.com/" class="footer_icons"><img src="img/facebook.svg" class="footer_img"></a>
+                <a target="_blank" href="https://twitter.com/?lang=es" class="footer_icons"><img src="img/twitter.svg" class="footer_img"></a>
+                <a target="_blank" href="https://www.youtube.com/" class="footer_icons"><img src="img/youtube.svg" class="footer_img"></a>
+            </div>
+
+            <h3 class="footer_copyright">All rights reserved &copy; Facebook - Meta</h3>
+        </section>
+    </footer>
+
+    <script src="js/slider.js"></script>
+    <script src="js/question.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
